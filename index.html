@@ -4,20 +4,56 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>CI at Agrematch</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
 	<body>
 		<div class="reveal">
+		
+			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h3>Ideal container images</h3>
+					<ul>
+						<li>Thin</li>
+						<li>Mission specific</li>
+						<li>Lots of tests</li>
+						<li>All binaries baked in, data out in buckets</li>
+						<li>Compute resources and dat storage are close</li>
+					</ul><br><br>
+				</section>
+				<section>
+					<h3>Training images constraints</h3>
+					<ul>
+						<li>Heavy (nvidia drivers, pytorch)</li>
+						<li>Lacking tests (temp?)</li>
+						<li>Not worth getting specific, small deltas</li>
+						<li>Minio is on prem, GPU in AWS</li>
+					</ul><br><br>
+					Hence: hierarchial, built in two stages sometimes
+				</section>
+				<section><h3>Pros</h3>
+					<ul>
+						<li>Seems ready now</li>
+						<li>Should work seamlessly on aws</li>
+						<li>May yet have some fat to trim</li>
+					</ul>
+					
+				</section>
+				<section><h3>Cons</h3>
+					<ul>
+						<li>Heavy to pull</li>
+						<li>Minio far from compute</li>
+						<li>To GPU or not to GPU, that is the question</li>
+					</ul>
+					
+				</section>
 			</div>
 		</div>
 
