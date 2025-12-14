@@ -13,7 +13,10 @@ The framework comes with a powerful feature set including [nested slides](https:
 
 ---
 
-Want to create reveal.js presentation in a graphical editor? Try <https://slides.com>. It's made by the same people behind reveal.js.
+Here at Agrematch we sometimes use it to make presentations. start with branch MASTER and fork to your own slide show. No need to even pull-request, each branch is its own lecture.
+You will want to look at the demo.html and then use the index.html which is empty and ready for slides. hint: Claude and other agents probably know how to create those slides out of the box if you ask nice,
+
+(Another hint: if you have a multi-part presentation or you have images and artifacts you reuse, you can do multiple talks per branch, nobody will stop you, do whaever is conveniant...)
 
 ---
 
@@ -24,7 +27,7 @@ Want to create reveal.js presentation in a graphical editor? Try <https://slides
 - 🖌 [Try the visual editor for reveal.js at Slides.com](https://slides.com/)
 - 🎬 [Watch the reveal.js video course (paid)](https://revealjs.com/course)
 
---- 
+---
 <div align="center">
   MIT licensed | Copyright © 2011-2024 Hakim El Hattab, https://hakim.se
 </div>
